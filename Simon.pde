@@ -12,7 +12,7 @@ SoundFile s;
 
 
 void setup() {
-  
+
   size(700, 700);           //Canvas size
   background(0);            //Background colour
 
@@ -23,16 +23,15 @@ void setup() {
 
   fill(0, 255, 0);                                  //Draw 4 coloured squares
   quad(0, 0, 350, 0, 350, 350, 0, 350);
-fill(255, 0, 0);
+  fill(255, 0, 0);
   quad(350, 0, 700, 0, 750, 350, 350, 350);
-fill(255, 243, 3);
+  fill(255, 243, 3);
   quad(0, 350, 350, 350, 350, 700, 0, 700);
-fill(0, 0, 255);
+  fill(0, 0, 255);
   quad(350, 350, 700, 350, 700, 700, 350, 700);
-  
+
 
   circle = new Detector (-25, -25);              //Places a detector in the program
-
 }
 
 void draw() {
@@ -42,12 +41,12 @@ void draw() {
 void keyPressed() {
 
   if (key == 'q') {
-    
-    if (circle.getY() == -25)  {
+
+    if (circle.getY() == -25) {
       circle.y1 = 25;
       circle.x1 = 25;
     }
-    
+
     //fill(164, 242, 170);
     //quad(0, 0, 350, 0, 350, 350, 0, 350);
     //fill(0);
